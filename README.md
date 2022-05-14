@@ -45,7 +45,7 @@ THEN the password is either displayed in an alert or written to the page
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: https://ayeh6.github.io/Password-Generator/
 
 ## My process
 

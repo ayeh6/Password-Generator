@@ -56,7 +56,7 @@ THEN the password is either displayed in an alert or written to the page
 
 ### What I learned
 
-Biggest thing I learned is that checkbox inputs don't use a .value parameter to get the value, it uses a .checked that returns a boolean if the box is checked or not. Other than that I had to be clever to make a random password based on given user parameters by using multiple arrays combined and having a random index be generated.
+Biggest thing I learned is that checkbox inputs don't use a .value parameter to get the value, it uses a .checked that returns a boolean if the box is checked or not. Other than that I had to be clever to make a random password based on given user parameters by using multiple arrays combined and having a random index be generated. Also \ by itself does nothing, \\ makes a \ valid in string, and doing \" makes a double quote read only in string and not compiled.
 
 ### Useful resources
 

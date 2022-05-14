@@ -25,8 +25,9 @@ let passwordArray = "";
 
 // Write password to the #password input
 function writePassword() {
+  //check password length
   if(passwordLengthInput.value <= 128 && passwordLengthInput.value >= 8) {
-    //valid password length
+    //valid password length, set length in object
     passwordObj.pLength = passwordLengthInput.value;
   }
   else {
@@ -35,8 +36,9 @@ function writePassword() {
     return;
   }
 
+  //check if any are checked
   if(lowerCaseInput.checked || upperCaseInput.checked || numericInput.checked || specialCharInput.checked) {
-    //at least one checked
+    //at least one checked, set parameters in object
     passwordObj.lowerCase = lowerCaseInput.checked;
     passwordObj.upperCase = upperCaseInput.checked;
     passwordObj.numeric = numericInput.checked;
@@ -48,20 +50,23 @@ function writePassword() {
     return;
   }
 
+  //generate password, display to screen
   let password = generatePassword();
   let passwordText = document.querySelector("#password");
-
   passwordText.value = password;
 
+  //reset parameters
   passwordObj.pLength = 0;
   passwordObj.lowerCase = false;
   passwordObj.upperCase = false;
   passwordObj.numeric = false;
   passwordObj.specialChar = false;
+  //reset password array
   passwordArray = "";
 }
 
 function generatePassword() {
+  //combine arrays for possible chars in password
   if(passwordObj.lowerCase) {
     passwordArray += lowerChars;
   }
@@ -74,12 +79,15 @@ function generatePassword() {
   if(passwordObj.specialChar) {
     passwordArray += specialChars;
   }
+  //get length of array
   let l = passwordArray.length;
-  let password = "";
-  let rand = 0;
+  let password = "";  //initialize password string
+  let rand = 0; //initialize random index variable
+
+  //for each character in the output password (based on input length)
   for(let i=0; i<passwordObj.pLength; i++) {
-    rand = Math.floor(Math.random()*l);
-    password += passwordArray[rand];
+    rand = Math.floor(Math.random()*l); //random index from 0 to length of array - 1
+    password += passwordArray[rand];  //add character to output password
   }
   return password;
 }

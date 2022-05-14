@@ -61,7 +61,7 @@ Biggest thing I learned is that checkbox inputs don't use a .value parameter to 
 ### Useful resources
 
 - [Random number generator in Javascript](https://www.w3schools.com/js/js_random.asp)
-- [Valid special characters for password](https://docs.oracle.com/cd/E11223_01/doc.910/e11197/app_special_char.htm#MCMAD416)
+- [Valid special characters for password](https://owasp.org/www-community/password-special-characters)
 
 ## Author
 

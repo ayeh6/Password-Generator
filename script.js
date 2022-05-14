@@ -11,7 +11,7 @@ var generateBtn = document.querySelector("#generate");
 const lowerChars = 'abcdefghijklmnopqrstuvwxyz';
 const upperChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const numericChars = '1234567890';
-const specialChars = "@%+\/'!#$^?:,(){}[]~`-_.";
+const specialChars = " !#\"$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
 
 let passwordObj = {
   pLength: 0,

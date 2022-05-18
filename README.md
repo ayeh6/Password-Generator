@@ -6,6 +6,7 @@
   - [The challenge](#the-challenge)
   - [User Story](#user-story)
   - [Acceptance Criteria](#acceptance-criteria)
+  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -42,6 +43,10 @@ WHEN all prompts are answered
 THEN a password is generated that matches the selected criteria  
 WHEN the password is generated  
 THEN the password is either displayed in an alert or written to the page
+
+### Screenshot
+
+![](./screenshot.png)
 
 ### Links
 
